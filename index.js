@@ -3,7 +3,7 @@ var Usrdata = document.querySelector('.box');
 let tourData = [
   {
     id:1,
-    name: "artvin",
+    name: "Madrid",
     desc: "İspanya'nın başkenti ve en güzel şehirlerinden biri olan Madrid, dünyaca ünlü müzeleri, görkemli tarihi yapıları ile dinamik ve çekici bir şehirdir.",
     price: 700,
     places: ["Casa de Campo", "Debod tapınağı", "Plaza de Espana", "Madrid Kraliyet Sarayı"],
@@ -77,6 +77,7 @@ function removeFromBasket(id){
   }
     
   }loadContent();
+  calculatePrice();
 }
 
 function loadContent() {
@@ -84,7 +85,7 @@ function loadContent() {
   var form = document.getElementById("formD");
   function handleForm(event) { event.preventDefault(); } 
   form.addEventListener('submit', handleForm);
-
+  calculatePrice();
   
   document.getElementById('cards').innerHTML = tourData.map(tour =>
     `<div id="container">
@@ -150,6 +151,7 @@ window.onload = loadContent ;
 function openNav() {
   document.getElementById("mySidenav").style.width = "350px";
   document.getElementById("main").style.marginLeft = "350px";
+  
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
@@ -189,7 +191,7 @@ function addToCart(id) {
       item.price=element.price;
       basket.push(item);
       loadContent();
-
+      calculatePrice();
     }
     
   }
@@ -202,5 +204,5 @@ function calculatePrice() {
     const element = basket[index];
     sum+= element.price;
   }
-  document.getElementById("ucret").innerHTML=sum;
+  document.getElementById("ucret").innerHTML="Toplam ücret: " +sum;
 }
