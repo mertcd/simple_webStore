@@ -20,46 +20,46 @@
     
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Add a Tour</a>
+        <a href="#">Tur Ekle</a>
        <div id = "formD">
         <form  action="#">
-            <label for="tname">Tour Name</label>
+            <label for="tname">Tur İsmi</label>
             <input type="text" id="tname" name="tourName" placeholder="Tour Name">
         
-            <label for="desc">Tour Description</label>
+            <label for="desc">Tur açıklaması</label>
             <input type="text" id="desc" name="tourDescription" placeholder="Description">
 
-            <label for="price">Price</label>
-            <input type="number" id="price" name="price" placeholder="price">
+            <label for="price">Ücret</label>
+            <input type="number" id="price" name="price" placeholder="Ücret">
 
-            <label for="Tplace1">Places to visit 1</label>
-            <input type="text" id="Tplace1" name="place1" placeholder="place1">
+            <label for="Tplace1">Örenyeri 1</label>
+            <input type="text" id="Tplace1" name="place1" placeholder="Örenyeri">
             
-            <label for="Tplace2">Places to visit 2</label>
-            <input type="text" id="Tplace2" name="place2" placeholder="place2">
+            <label for="Tplace2">Örenyeri 2</label>
+            <input type="text" id="Tplace2" name="place2" placeholder="Örenyeri">
             
-            <label for="Tplace3">Places to visit 3</label>
-            <input type="text" id="Tplace3" name="place3" placeholder="place3">
+            <label for="Tplace3">Örenyeri 3</label>
+            <input type="text" id="Tplace3" name="place3" placeholder="Örenyeri">
             
-            <label for="Tplace4">Places to visit 4</label>
-            <input type="text" id="Tplace4" name="place4" placeholder="place4">
+            <label for="Tplace4">Örenyeri 4</label>
+            <input type="text" id="Tplace4" name="place4" placeholder="Örenyeri">
 
-            <label for="photo">Photo Url</label>
-            <input type="url" id="photo" name="photo" placeholder="photo Url">
+            <label for="photo">Foto Url</label>
+            <input type="url" id="photo" name="photo" placeholder="Foto Url">
            
             
         </form>
-          <button id = "tpnvbtn" onclick="addItem()">Submit</button>
+          <button id = "tpnvbtn" onclick="addItem()">Ekle</button>
       </div>
     </div>
       <!-- Use any element to open the sidenav -->
      
 
-    <div id = "main">
+   <div id = main>
     <div class="topnav">
        
-        <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
+        <a class="active" href="#home">Ana Sayfa</a>
+        <a onclick = "opeNavri()" href="javascript:void(0)">Sepet</a>
         <a href="#contact">Contact</a>
         <input id = "ee" type="text" placeholder="Search..">
       </div>
@@ -71,7 +71,26 @@
     <div id = "cards">
 
     </div>
-    
+
+    <div id="mySidenavright" class="sidenavri">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavri()">&times;</a>
+      <a href="#">Cart</a>
+
+      <ul id="cardList">
+        
+        
+      </ul>
+      <button id="nvbtn" onclick="calculatePrice()">Ücret Hesapla</button>
+      <p id="ucret"></p>
+
+       
+      
+    </div>
+   
+
+
+</div>
+
 
 </body>
 

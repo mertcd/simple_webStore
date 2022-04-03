@@ -11,7 +11,42 @@
     padding: 0;
 }
 
+.sidenavri {
+  height: 100%; /* 100% Full-height */
+  width: 350px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
 
+  /* The navigation menu links */
+  .sidenavri a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenavri a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenavri .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 
 /* The side navigation menu */
 .sidenav {
@@ -52,7 +87,7 @@
   }
 
 
-  #tpnvbtn {
+  #tpnvbtn ,#nvbtn{
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -61,7 +96,9 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin-left: 10%;
   }
+  
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
@@ -69,9 +106,9 @@
     
   }
   input[type=text], select, input[type=number] , input[type=url] {
-    width: 100%;
+    width: 95%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px 8px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -166,7 +203,7 @@ body {
     height: 350px;
     width: 700px;
     float: left;
-    margin-left: 100px;
+    margin-left: 50px;
      
 }
 
@@ -344,4 +381,86 @@ body {
 
 .product-image:hover img {
     transform: scale(1.2, 1.2);
+}
+
+body {
+  background-image: url("wood.jpg");
+}
+
+
+
+
+
+#rigtcontainer {
+  box-shadow: 0 3px 6px 1px grey;
+  background: rgba(255, 255, 255, 0.90);
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 15px;
+  height: 50px;
+  width: 300px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+   
+   
+}
+
+.rproduct-details {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  padding: 5px;
+  height: 100%;
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+#rigtcontainer .rproduct-details h1 {
+  font-family: 'Bebas Neue', cursive;
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  color: #344055;
+  margin: 0;
+}
+
+#rigtcontainer .rproduct-details:before {
+  position: absolute;
+  content: '';
+  right: 0%;
+  top: 0%;
+  transform: translate(25px, -15px);
+  font-family: 'Bree Serif', serif;
+  display: inline-block;
+  background: #ffe6e6;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px;
+  color: white;
+  margin: 0;
+  animation: chan-sh 6s ease infinite;
+}
+
+ 
+
+#rigtcontainer .rproduct-details>p {
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+#ucret {
+  font-family: 'Bebas Neue', cursive;
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  color: #344055;
+  margin: 0;
 }
