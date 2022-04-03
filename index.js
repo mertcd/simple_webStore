@@ -87,6 +87,7 @@ function loadContent() {
   form.addEventListener('submit', handleForm);
   calculatePrice();
   
+  
   document.getElementById('cards').innerHTML = tourData.map(tour =>
     `<div id="container">
     
@@ -151,16 +152,28 @@ window.onload = loadContent ;
 function openNav() {
   document.getElementById("mySidenav").style.width = "350px";
   document.getElementById("main").style.marginLeft = "350px";
-  
+ 
+}
+
+function openNavri() {
+  document.getElementById("mySidenavright").style.width = "350px";
+  document.getElementById("main").style.marginRight = "350px";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
+ 
 }
 
 
+function closeNavri() {
+ 
+  document.getElementById("mySidenavright").style.width = "0";
+  document.getElementById("main").style.marginRight = "0";
+
+}
 
 function addItem() {
   var pro = {
@@ -205,4 +218,11 @@ function calculatePrice() {
     sum+= element.price;
   }
   document.getElementById("ucret").innerHTML="Toplam ücret: " +sum;
+}
+
+
+function loadS( ) {
+  document.getElementById("basket").innerHTML = basket.map(tour =>
+    `<p><a href="#">${tour.name}</a> <span class="price">$${tour.price}</span></p>`
+    )
 }
