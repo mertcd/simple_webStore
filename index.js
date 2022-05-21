@@ -50,7 +50,7 @@ let tourData = [
     price: 300,
     places: ["Saraybosna", "Mostar", "Üsküp", "Manastır"],
     url: "https://geziotesi.com/wp-content/uploads/2018/09/plitvicelakes-hirvatistan.jpg"
-  },
+  }
 ]
 
 
