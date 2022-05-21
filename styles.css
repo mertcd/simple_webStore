@@ -135,7 +135,7 @@
 /* Add a black background color to the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #e9e9e9;
+    background-color: #2f69d4;
   }
   
   /* Style the links inside the navigation bar */
@@ -194,17 +194,22 @@ body {
     background-size: cover;
 }
 
+#cards {
+  display: block;
+  justify-content: center;
+}
+
 #container {
     box-shadow: 0 15px 30px 1px grey;
     background: rgba(255, 255, 255, 0.90);
     text-align: center;
     border-radius: 5px;
     overflow: hidden;
-    margin: 5em auto;
+    margin:  1em auto;
     height: 350px;
     width: 700px;
     float: left;
-    margin-left: 50px;
+    margin-left: 25px;
      
 }
 
@@ -385,7 +390,7 @@ body {
 }
 
 body {
-  background-image: url("wood.jpg");
+  background-image: url("wood.webp");
 }
 
 
